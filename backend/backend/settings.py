@@ -134,6 +134,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 #2025/05/27 NhonNT17 added end.
 
+#2025/05/29 NhonNT17 added start.
+AUTH_USER_MODEL = 'userauths.User'
+#2025/05/29 NhonNT17 added end.
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

@@ -16,7 +16,7 @@ class User(AbstractUser):
         return self.email
     
     def save(self, *args, **kwargs):
-        email_username, mobile = self.email.split('@')
+        email_username, domain = self.email.split('@')
         if self.full_name == "" or self.full_name is None:
             self.full_name = email_username
         if self.username == "" or self.username is None:
